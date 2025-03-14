@@ -1,4 +1,4 @@
-from .constants import MISSING_VALUES, DATASET_KEYS, SUMMARIES, SKEWNESS
+from utils.constants import MISSING_VALUES, DATASET_KEYS, SUMMARIES, SKEWNESS
 
 
 def analyze_dataset(df, exclude_columns=None, include_stats=True):

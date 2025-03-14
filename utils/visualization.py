@@ -1,7 +1,16 @@
-# chart visualzation function
-
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import seaborn as sns
+
+plot_functions = {
+    "scatter": sns.scatterplot,
+    "line": sns.lineplot,
+    "bar": sns.barplot,
+    "box": sns.boxplot,
+    "hist": sns.histplot,
+    "pie": plt.pie,
+    "count": sns.countplot,
+    "heatmap": sns.heatmap,
+}
 
 
 def visualize_chart(chart_objs, nrows=1, ncols=1, **kwargs):
@@ -21,17 +30,6 @@ def visualize_chart(chart_objs, nrows=1, ncols=1, **kwargs):
 
     width = 18 if ncols == 1 else ncols * 5.43
     height = 6 if nrows == 1 else nrows * 4
-
-    plot_functions = {
-        "scatter": sns.scatterplot,
-        "line": sns.lineplot,
-        "bar": sns.barplot,
-        "box": sns.boxplot,
-        "hist": sns.histplot,
-        "pie": plt.pie,
-        "count": sns.countplot,
-        "heatmap": sns.heatmap,
-    }
 
     plt.figure(figsize=(width, height))
 
