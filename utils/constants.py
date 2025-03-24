@@ -28,3 +28,7 @@ SUMMARIES = {
     "SKEWNESS": "skewness",
     "STATISTICS": "statistics",
 }
+
+CLEAN_TEXT = {
+    "STOP_WORDS": "english",
+    }
